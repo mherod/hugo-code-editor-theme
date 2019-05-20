@@ -15,7 +15,7 @@
 
     {{ with .Site.Taxonomies.tags }}
     <div id="tags" class="open">
-        <h3 data-open="tags">{{ ( index $.Site.Data.translations (default $.Site.Params.locale "en-US") ).tags }}</h3>
+        <h3 data-open="tags">tags</h3>
         <ul class="tags">
             {{ range $name, $taxonomy := . }}
             <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
