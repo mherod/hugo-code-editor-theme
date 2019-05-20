@@ -1054,7 +1054,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #839496;
+  color: white;
   background-color: #fff; }
 
 input,
@@ -2125,7 +2125,7 @@ ul.pagination {
     ul.pagination li.active {
       text-decoration: underline; }
     ul.pagination li.disabled a {
-      color: #839496; }
+      color: white; }
 
 html {
   height: 100%; }
@@ -2135,7 +2135,7 @@ body {
   height: 100%;
   font-family: 'Source Code Pro', serif;
   background-color: rgba(0, 0, 0, 0.98);
-  color: #839496;
+  color: white;
   overflow-x: hidden; }
 
 .page-container {
@@ -2191,7 +2191,7 @@ a {
       .menu nav ul li:hover {
         background-color: #003b4a; }
       .menu nav ul li a, .menu nav ul li a:hover {
-        color: #839496;
+        color: white;
         text-decoration: none; }
   @media (max-width: 991px) {
     .menu nav h3 {
