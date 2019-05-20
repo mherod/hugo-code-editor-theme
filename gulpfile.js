@@ -7,7 +7,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 require('./release');
 
-gulp.task('fonts', function () {
+gulp.task('fonts', async function () {
     gulp.src('./node_modules/bootstrap-sass/assets/fonts/bootstrap/*')
         .pipe(gulp.dest('./static/fonts'));
 });
@@ -35,9 +35,7 @@ gulp.task('watch', function () {
     gulp.watch('./static/**/*.js', ['js']);
 });
 
-gulp.task('default', async function () {
-    gulp.series('fonts', 'css', 'js');
-});
+gulp.task('default', gulp.parallel('fonts', 'css', 'js'));
 
 function handleError(err) {
     gutil.log(err);
