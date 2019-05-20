@@ -10,11 +10,12 @@ html {
 body {
   min-height: 100%;
   height: 100%;
-  font-family: 'Source Code Pro';
+  font-family: 'Source Code Pro', serif;
   background-color: $bg-color;
   color: $text-color;
   overflow-x: hidden;
-  &>.container-fluid {
+
+  & > .container-fluid {
     @extend .no-padding-left-and-right;
   }
 }
@@ -26,6 +27,7 @@ body {
 
 a {
   color: $link-color;
+
   &:hover {
     color: $link-color;
     text-decoration: underline;
@@ -44,11 +46,12 @@ a {
 }
 
 .menu {
-  padding-left: 0px;
+  padding-left: 0;
+
   nav {
     @media (min-width: $screen-md-min) {
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
       position: fixed;
       height: 100%;
       overflow-y: auto;
@@ -65,11 +68,13 @@ a {
       @extend .no-user-select;
       cursor: pointer;
       font-size: 14px;
-      padding: 4px 0px 4px 15px;
-      margin: 0px;
+      padding: 4px 0 4px 15px;
+      margin: 0;
+
       &.home-link {
         text-align: center;
       }
+
       &:not(.home-link):before {
         @extend .glyphicon;
         @extend .glyphicon-folder-close;
@@ -84,12 +89,14 @@ a {
     }
 
     ul {
-      padding-left: 0px;
-      margin: 0px;
+      padding-left: 0;
+      margin: 0;
+
       li {
         list-style: none;
         padding: 4px 30px 4px 40px;
         margin-right: -15px;
+
         &:before {
           @extend .glyphicon;
           @extend .glyphicon-file;
@@ -117,7 +124,7 @@ a {
 
     @media (max-width: $screen-sm-max) {
       h3 {
-        padding: 10px 0px 10px 15px;
+        padding: 10px 0 10px 15px;
       }
       ul li {
         padding: 10px 30px 10px 40px;
